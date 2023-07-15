@@ -1,0 +1,135 @@
+.container {
+    position: relative;
+    top: 80px;
+    height: 70vh;
+}
+
+
+.content {
+    height: 450px;
+    width: 600px;
+    border-radius: 5px;
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    z-index: 0;
+}
+
+.content>button {
+    padding: 5px 20px;
+    background-color: #2f3540;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding-top: 1px;
+    height: 30px;
+    transition: 0.25s ease-in-out 0.1s;
+    z-index: 0;
+}
+
+.content>button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 2px 2px 0px #646974;
+}
+
+.weekdays {
+    width: 500px;
+    margin: 0px auto;
+    position: relative;
+    right: 20px;
+    bottom: 50px;
+}
+
+.weekdays ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    position: relative;
+    gap: 16px;
+    bottom: 300px;
+    right: 38px;
+}
+
+.weekdays ul li {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: small;
+    color: #24262a;
+
+}
+
+.dates {
+    position: relative;
+    bottom: 350px;
+
+}
+
+.dates ul {
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(7, 80px);
+    grid-template-rows: repeat(5, 50px);
+    position: relative;
+    width: 600px;
+    grid-row-start: 4;
+}
+
+.dates ul li {
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+    color: white;
+    border: 1px solid whitesmoke;
+    background-color: #2f3540;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #2f3540;
+    cursor: pointer;
+}
+
+.dates>ul>li:hover,
+.dates>ul>li:focus {
+    background-color: #535862;
+}
+
+.wed {
+    position: relative;
+    left: 12px;
+}
+
+
+.tue {
+    position: relative;
+    left: 15px;
+}
+
+.thur {
+    position: relative;
+    left: 5px
+}
+
+.fri {
+    position: relative;
+    left: 12px
+}
+
+.sat {
+    position: relative;
+    left: 22px;
+}
+
+.sun {
+    position: relative;
+    left: 4px;
+}
+
+.mon {
+    position: relative;
+    left: 12px;
+}
